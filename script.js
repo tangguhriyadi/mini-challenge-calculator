@@ -1,7 +1,5 @@
 const state = {
     displayNumber: 'Result',
-    operator: null,
-    firstNumber: null,
 };
 
 const updateDisplay = () => {
