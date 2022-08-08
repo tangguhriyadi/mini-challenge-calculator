@@ -45,7 +45,6 @@ for (let button of buttons) {
                 }
                 updateDisplay()
         }
-        console.log(state)
     })
 }
 
