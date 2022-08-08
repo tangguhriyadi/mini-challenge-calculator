@@ -24,7 +24,7 @@ for (let button of buttons) {
                 }
                 
                 }catch(error){
-                    state.displayNumber = 'NaN, coba lagi'
+                    state.displayNumber = 'Error, coba lagi'
                     setTimeout(() => {
                         state.displayNumber = 'Result'
                         updateDisplay()
