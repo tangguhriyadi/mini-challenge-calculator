@@ -13,7 +13,16 @@ for (let button of buttons) {
             case '=':
                 try{
                 let result = eval(state.displayNumber)
-                state.displayNumber = result
+                if(!result){
+                    state.displayNumber = 'NaN, coba lagi'
+                    setTimeout(() => {
+                        state.displayNumber = 'Result'
+                        updateDisplay()
+                    }, 2000)
+                } else {
+                    state.displayNumber = result
+                }
+                
                 }catch(error){
                     state.displayNumber = 'NaN, coba lagi'
                     setTimeout(() => {
@@ -36,5 +45,7 @@ for (let button of buttons) {
                 }
                 updateDisplay()
         }
+        console.log(state)
     })
 }
+
